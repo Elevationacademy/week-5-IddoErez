@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Totally Real Site</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <input type="text" id="team-input" placeholder="What's the team?">
+    <button id="btn"  onclick=fetchTeamData()>Get Roster</button>
+    <div id="players"></div>
+  
+<script id="player-template" type="text/x-handlebars-template">
+{{#each teamPlayers}}
+{{firstName}} {{firstName}}
+{{jerseyNum}}
+<img class="player pic" src="https://nba-players.herokuapp.com/players/{{lastName}}/{{firstName}}" onerror="this.src='http://www.vinylsilhouettes.com/content/images/thumbs/0002875_basketball-player-3-sports-decor-silhouette-decals.gif'">
+{{position}}
+{{/each}}
+</script>  
+
+<script src="./jquery/dist/jquery.js"></script>
+<script src="./handlebars/dist/handlebars.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
