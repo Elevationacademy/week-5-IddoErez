@@ -1,0 +1,26 @@
+{
+  "name": "npm-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ex.js",
+  "dependencies": {
+    "copy-descriptor": "^0.1.1",
+    "core-js": "^1.2.7",
+    "core-util-is": "^1.0.2",
+    "decamelize": "^1.2.0",
+    "decode-uri-component": "^0.2.0",
+    "deep-extend": "^0.6.0",
+    "define-property": "^2.0.2",
+    "defined": "^1.0.0",
+    "detective": "^4.7.1",
+    "escape-string-regexp": "^1.0.5",
+    "faker": "^5.1.0",
+    "validator": "^13.1.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
