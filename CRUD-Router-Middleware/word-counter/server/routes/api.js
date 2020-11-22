@@ -1,15 +1,16 @@
 const express = require('express')
 const router = express.Router()
 
-const wordCounter = {}
+const wordCounter = {child: 1}
 
 router.get('/sanity', function (req, res) {
     res.send("server up and running")
 })
 
-router.get('/word/: word', function (req, res) {
+router.get('/word/:word', function (req, res) {
     if (wordCounter[req.params.word]) {
         res.send({ count: wordCounter[req.params.word] })
+       
     } else {
         res.send({ count: 0 })
     }
